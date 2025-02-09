@@ -1,2 +1,5 @@
 public/*
 static/hl*.css
+content/*
+config.toml
+static/*
