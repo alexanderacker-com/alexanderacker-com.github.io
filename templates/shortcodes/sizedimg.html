@@ -1,0 +1,2 @@
+{% set image = resize_image(path=page.path ~ src, width=width, height=height) %}
+<img src="{{ image.url }}" {% if alt %} alt="{{ alt }}"{% endif %}>
