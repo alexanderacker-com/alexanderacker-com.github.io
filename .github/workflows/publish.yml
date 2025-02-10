@@ -12,10 +12,15 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
       with:
-        submodules: recursive
+        path: 'co'
+        fetch-depth: 1
+        submodules: true
     - name: Checkout content repository
       uses: actions/checkout@v2
       with:
+        clean: false
+        path: 'co'
+        fetch-depth: 1
         repository: ${{ secrets.CONTENT_REPO }}
         token: ${{ secrets.CONTENT_REPO_ACCESS }}
     - name: Build and deploy
