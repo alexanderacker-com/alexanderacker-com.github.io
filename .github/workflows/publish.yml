@@ -12,18 +12,22 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
       with:
-        path: 'co'
+        path: base
         fetch-depth: 1
         submodules: true
     - name: Checkout content repository
       uses: actions/checkout@v2
       with:
         clean: false
-        path: 'co'
+        path: content
         fetch-depth: 1
         repository: ${{ secrets.CONTENT_REPO }}
         token: ${{ secrets.CONTENT_REPO_ACCESS }}
+    - name: Move content to base, exclude dotfiles
+      run: |
+        find content -mindepth 1 -maxdepth 1 -not -name '.*' -exec mv -t base {} +
     - name: Build and deploy
       uses: alexanderacker-com/zola-deploy-action@v0.19.2
       env:
+        BUILD_DIR: base
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
