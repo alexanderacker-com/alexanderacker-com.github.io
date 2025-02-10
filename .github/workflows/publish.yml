@@ -1,0 +1,24 @@
+name: Publish to GitHub Pages
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      with:
+        submodules: true
+    - name: Checkout content repository
+      uses: actions/checkout@v2
+      with:
+        repository: ${{ secrets.CONTENT_REPO }}
+        token: ${{ secrets.CONTENT_REPO_ACCESS }}
+    - name: Build and deploy
+      uses: alexanderacker-com/zola-deploy-action@v0.19.2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
