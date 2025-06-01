@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  
+  
+    
+  
+  
+  <meta name="description" content="A list of things (including books) that I&#x27;m interested in for 2025">
+  
+
+  <title>2025 Learning Topics</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  
+  <style>
+
+  /* light mode colors */
+  body {
+    --primary-color: #5871a2;
+    --primary-pale-color: #5871a210;
+    --text-color: #282828;
+    --text-pale-color: #323232;
+    --bg-color: #ffffff;
+    --highlight-mark-color: #5f75b035;
+    --blockquote-color: #8e8d91;
+
+    --callout-note-color: #5871a2;
+    --callout-important-color: #8062b0;
+    --callout-warning-color: #936e51;
+    --callout-alert-color: #bc5252;
+    --callout-question-color: #477389;
+    --callout-tip-color: #3c8460;
+  }
+
+  /* dark mode colors */
+  body.dark {
+    --primary-color: #ff4800;
+    --primary-pale-color: #5d77ac20;
+    --text-color: #dddddd;
+    --text-pale-color: #cbcbcb;
+    --bg-color: #202124;
+    --highlight-mark-color: #5f75b035;
+    --blockquote-color: #747983;
+
+    --callout-note-color: #dd571c;
+    --callout-important-color: #8062b0;
+    --callout-warning-color: #936e51;
+    --callout-alert-color: #bc5252;
+    --callout-question-color: #477389;
+    --callout-tip-color: #3c8460;
+  }
+
+  /* typography */
+  body {
+    --main-font: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --code-font: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --homepage-max-width: 768px;
+    --main-max-width: 768px;
+    --avatar-size: 56px;
+    --homepage-font-size: 16px;
+    --homepage-line-height: 1.75;
+    --paragraph-font-size: 16px;
+    --paragraph-line-height: 1.75;
+    --aside-font-size: 15px;
+    --img-border-radius: 0px;
+    --detail-border-radius: 0px;
+    --dark-mode-img-brightness: 0.75;
+    --dark-mode-chart-brightness: 0.75;
+    --inline-code-border-radius: 2px;
+    --inline-code-bg-color: var(--primary-pale-color);
+    --block-code-border-radius: 0px;
+    --block-code-border-color: var(--primary-color);
+    --detail-border-color: var(--primary-color);
+  }
+
+</style>
+
+  <link rel="stylesheet" href="/main.css">
+  
+
+<link id="hl" rel="stylesheet" type="text/css" href="/hl-light.css" />
+
+
+  
+</head>
+
+<body class="post">
+  
+  <script>
+    const theme = sessionStorage.getItem('theme');
+    const match = window.matchMedia("(prefers-color-scheme: dark)").matches
+    if ((theme && theme == 'dark') || (!theme && match)) {
+      document.body.classList.add('dark');
+      const hl = document.querySelector('link#hl');
+      if (hl) hl.href = '/hl-dark.css';
+    }
+  </script>
+  
+  
+<header >
+  <div id="header-wrapper">
+    <nav>
+      <a class="instant" href="/">xenon</a>
+      
+        <button id="toggler" class="separator" aria-label="toggle expand">&#x2F;</button>
+      
+      
+        <span class="wrap left fold">{</span>
+        
+        
+          
+        
+          
+        
+        
+        
+          
+          
+          <a class="instant " href="&#x2F;blog">Blog</a>
+          <span class="wrap-separator fold">,</span>
+        
+          
+          
+            
+          
+          <a class="instant fold" href="&#x2F;projects">Projects</a>
+          
+        
+        <span class="wrap right fold">}</span>
+      
+    </nav>
+    <div id="btns">
+      
+      
+      
+
+      
+      
+      
+        
+      
+      
+      <a id="rss-btn" href="&#x2F;blog&#x2F;feed.xml" aria-label="rss feed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path d="M3 17C5.20914 17 7 18.7909 7 21H3V17ZM3 10C9.07513 10 14 14.9249 14 21H12C12 16.0294 7.97056 12 3 12V10ZM3 3C12.9411 3 21 11.0589 21 21H19C19 12.1634 11.8366 5 3 5V3Z" fill="currentColor"></path></svg></a>
+      
+      
+
+      
+      
+      
+      <button id="theme-toggle" aria-label="theme switch">
+        <span class="moon-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path d="M10 7C10 10.866 13.134 14 17 14C18.9584 14 20.729 13.1957 21.9995 11.8995C22 11.933 22 11.9665 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C12.0335 2 12.067 2 12.1005 2.00049C10.8043 3.27098 10 5.04157 10 7ZM4 12C4 16.4183 7.58172 20 12 20C15.0583 20 17.7158 18.2839 19.062 15.7621C18.3945 15.9187 17.7035 16 17 16C12.0294 16 8 11.9706 8 7C8 6.29648 8.08133 5.60547 8.2379 4.938C5.71611 6.28423 4 8.9417 4 12Z" fill="currentColor"></path></svg></span>
+        <span class="sun-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path d="M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM11 1H13V4H11V1ZM11 20H13V23H11V20ZM3.51472 4.92893L4.92893 3.51472L7.05025 5.63604L5.63604 7.05025L3.51472 4.92893ZM16.9497 18.364L18.364 16.9497L20.4853 19.0711L19.0711 20.4853L16.9497 18.364ZM19.0711 3.51472L20.4853 4.92893L18.364 7.05025L16.9497 5.63604L19.0711 3.51472ZM5.63604 16.9497L7.05025 18.364L4.92893 20.4853L3.51472 19.0711L5.63604 16.9497ZM23 11V13H20V11H23ZM4 11V13H1V11H4Z" fill="currentColor"></path></svg></span>
+      </button>
+      
+
+      
+      
+      
+      
+      <button id="toc-toggle" aria-label="table of content">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z" fill="currentColor"></path></svg>
+      </button>
+      
+      
+    </div>
+  </div>
+</header>
+
+
+
+
+<dialog id="rss-mask">
+  <div>
+    <a href="https:&#x2F;&#x2F;alexanderacker-com.github.io&#x2F;blog&#x2F;feed.xml">https:&#x2F;&#x2F;alexanderacker-com.github.io&#x2F;blog&#x2F;feed.xml</a>
+    
+    
+    <button autofocus aria-label="copy" data-link="https:&#x2F;&#x2F;alexanderacker-com.github.io&#x2F;blog&#x2F;feed.xml" data-copy-icon="&lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;20&quot; height=&quot;20&quot;&gt;&lt;path d=&quot;M6.9998 6V3C6.9998 2.44772 7.44752 2 7.9998 2H19.9998C20.5521 2 20.9998 2.44772 20.9998 3V17C20.9998 17.5523 20.5521 18 19.9998 18H16.9998V20.9991C16.9998 21.5519 16.5499 22 15.993 22H4.00666C3.45059 22 3 21.5554 3 20.9991L3.0026 7.00087C3.0027 6.44811 3.45264 6 4.00942 6H6.9998ZM5.00242 8L5.00019 20H14.9998V8H5.00242ZM8.9998 6H16.9998V16H18.9998V4H8.9998V6Z&quot; fill=&quot;currentColor&quot;&gt;&lt;&#x2F;path&gt;&lt;&#x2F;svg&gt;" data-check-icon="&lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;20&quot; height=&quot;20&quot;&gt;&lt;path d=&quot;M10.0007 15.1709L19.1931 5.97852L20.6073 7.39273L10.0007 17.9993L3.63672 11.6354L5.05093 10.2212L10.0007 15.1709Z&quot; fill=&quot;currentColor&quot;&gt;&lt;&#x2F;path&gt;&lt;&#x2F;svg&gt;" >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path d="M6.9998 6V3C6.9998 2.44772 7.44752 2 7.9998 2H19.9998C20.5521 2 20.9998 2.44772 20.9998 3V17C20.9998 17.5523 20.5521 18 19.9998 18H16.9998V20.9991C16.9998 21.5519 16.5499 22 15.993 22H4.00666C3.45059 22 3 21.5554 3 20.9991L3.0026 7.00087C3.0027 6.44811 3.45264 6 4.00942 6H6.9998ZM5.00242 8L5.00019 20H14.9998V8H5.00242ZM8.9998 6H16.9998V16H18.9998V4H8.9998V6Z" fill="currentColor"></path></svg>
+    </button>
+  </div>
+</dialog>
+
+
+
+<div id="wrapper">
+  <div id="blank"></div>
+  <aside>
+    
+    
+    <nav>
+      <ul>
+        
+        <li>
+          <a class="h2" href="#topics">Topics</a>
+          
+          <ul>
+            
+            <li>
+              <a class="h3" href="#signal-processing">Signal Processing</a>
+            </li>
+            
+            <li>
+              <a class="h3" href="#linear-algebra">Linear Algebra</a>
+            </li>
+            
+            <li>
+              <a class="h3" href="#statistics">Statistics</a>
+            </li>
+            
+            <li>
+              <a class="h3" href="#computer-vision">Computer Vision</a>
+            </li>
+            
+            <li>
+              <a class="h3" href="#analysis">Analysis</a>
+            </li>
+            
+          </ul>
+          
+        </li>
+        
+        <li>
+          <a class="h2" href="#minor-interest">Minor Interest</a>
+          
+          <ul>
+            
+            <li>
+              <a class="h3" href="#networks">Networks</a>
+            </li>
+            
+            <li>
+              <a class="h3" href="#llms">LLMs</a>
+            </li>
+            
+          </ul>
+          
+        </li>
+        
+        <li>
+          <a class="h2" href="#books">Books</a>
+          
+        </li>
+        
+      </ul>
+    </nav>
+    
+    
+    <button id="back-to-top" aria-label="back to top">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z" fill="currentColor"></path></svg>
+    </button>
+    
+  </aside>
+  <main>
+    <div>
+      
+      
+      
+      
+      <div id="copy-cfg" style="display: none;" data-copy-icon="&lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;20&quot; height=&quot;20&quot;&gt;&lt;path d=&quot;M6.9998 6V3C6.9998 2.44772 7.44752 2 7.9998 2H19.9998C20.5521 2 20.9998 2.44772 20.9998 3V17C20.9998 17.5523 20.5521 18 19.9998 18H16.9998V20.9991C16.9998 21.5519 16.5499 22 15.993 22H4.00666C3.45059 22 3 21.5554 3 20.9991L3.0026 7.00087C3.0027 6.44811 3.45264 6 4.00942 6H6.9998ZM5.00242 8L5.00019 20H14.9998V8H5.00242ZM8.9998 6H16.9998V16H18.9998V4H8.9998V6Z&quot; fill=&quot;currentColor&quot;&gt;&lt;&#x2F;path&gt;&lt;&#x2F;svg&gt;" data-check-icon="&lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;20&quot; height=&quot;20&quot;&gt;&lt;path d=&quot;M10.0007 15.1709L19.1931 5.97852L20.6073 7.39273L10.0007 17.9993L3.63672 11.6354L5.05093 10.2212L10.0007 15.1709Z&quot; fill=&quot;currentColor&quot;&gt;&lt;&#x2F;path&gt;&lt;&#x2F;svg&gt;"></div>
+      
+      
+      <article class="prose" data-backlink-icon="&lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;20&quot; height=&quot;20&quot;&gt;&lt;path d=&quot;M9.41421 8L18.0208 16.6066L16.6066 18.0208L8 9.41421V17H6V6H17V8H9.41421Z&quot; fill=&quot;currentColor&quot;&gt;&lt;&#x2F;path&gt;&lt;&#x2F;svg&gt;">
+        <h1>2025 Learning Topics</h1>
+        <div id="post-info">
+          <div id="date">
+            <span id="publish">2025-02-01</span>
+            <span>Updated on <span id="updated">2025-02-14</span></span>
+            </div>
+
+          
+
+          
+          <div id="tags">
+            <a class="instant" href="https://alexanderacker-com.github.io/tags/learn"><span>#</span>learn</a><a class="instant" href="https://alexanderacker-com.github.io/tags/math"><span>#</span>math</a><a class="instant" href="https://alexanderacker-com.github.io/tags/programming"><span>#</span>programming</a>
+          </div>
+          
+        </div>
+
+        
+        
+
+        
+
+        
+
+        
+          <h1 id="topics">Topics<a class="zola-anchor" href="#topics" aria-label="Anchor link for: topics" style="visibility: hidden;"></a>
+</h1>
+<h2 id="signal-processing">Signal Processing<a class="zola-anchor" href="#signal-processing" aria-label="Anchor link for: signal-processing" style="visibility: hidden;"></a>
+</h2>
+<p>Since I've been playing with <a rel="nofollow noreferrer" href="https://github.com/xenon/soundtests">audio processing</a> for fun and often am adjacent to Computer Vision applications at work I've been interested in signal processing.</p>
+<p>In general the skill of analyzing data in the frequency domain seems to help one gain intuition for abstract similarities between audio, images or other types of data especially in the time domain.</p>
+<h3 id="resources">Resources<a class="zola-anchor" href="#resources" aria-label="Anchor link for: resources" style="visibility: hidden;"></a>
+</h3>
+<ul>
+<li><a rel="nofollow noreferrer" href="https://www.youtube.com/@mikexcohen1">Mike X Cohen</a>: applied courses for both signal processing, image processing and fourier transform</li>
+<li><a rel="nofollow noreferrer" href="https://www.youtube.com/@iain_explains">Iain Explains</a>: applied engineering examples of fourier transform</li>
+</ul>
+<h2 id="linear-algebra">Linear Algebra<a class="zola-anchor" href="#linear-algebra" aria-label="Anchor link for: linear-algebra" style="visibility: hidden;"></a>
+</h2>
+<p>I want to improve my intuitions for Linear Algebra and advance into more applied topics. I remember the basics from my undergraduate studies but want to get to more advanced topics which prove to be useful for Signal Processing, Computer Vision, ML and Statistics.</p>
+<h3 id="resources-1">Resources<a class="zola-anchor" href="#resources-1" aria-label="Anchor link for: resources-1" style="visibility: hidden;"></a>
+</h3>
+<ul>
+<li><a rel="nofollow noreferrer" href="https://www.youtube.com/playlist?list=PL49CF3715CB9EF31D">MIT 18.06 Linear Algebra Lectures</a></li>
+<li><a rel="nofollow noreferrer" href="https://www.goodreads.com/book/show/309768.Linear_Algebra_Done_Right">Linear Algebra Done Right</a><sup class="footnote-reference"><a href="#2">1</a></sup></li>
+<li><a rel="nofollow noreferrer" href="https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/video_galleries/video-lectures/">MIT 18.065: Matrix Methods in Data Analysis, Signal Processing, and Machine Learning</a></li>
+</ul>
+<h2 id="statistics">Statistics<a class="zola-anchor" href="#statistics" aria-label="Anchor link for: statistics" style="visibility: hidden;"></a>
+</h2>
+<p>A similar story as with Linear Algebra here. I think however with Statistics I could probably take a more theoretical approach as the courses from my undergrad were very applied and I believe my intuition for a topic is usually better when I take a more rigorous approach. Especially given this is second pass through the topic it usually makes sense to try formalizing the concepts.</p>
+<h3 id="resources-2">Resources<a class="zola-anchor" href="#resources-2" aria-label="Anchor link for: resources-2" style="visibility: hidden;"></a>
+</h3>
+<ul>
+<li><a rel="nofollow noreferrer" href="https://www.goodreads.com/book/show/383472.Statistical_Inference">Statistical Inference Second Edition</a><sup class="footnote-reference"><a href="#3">2</a></sup></li>
+<li><a rel="nofollow noreferrer" href="https://www.goodreads.com/book/show/411722.All_of_Statistics">All of Statistics</a><sup class="footnote-reference"><a href="#7">3</a></sup></li>
+<li><a rel="nofollow noreferrer" href="https://www.goodreads.com/book/show/28087572-statistics-for-mathematicians">Statistics for Mathematicians: A Rigorous First Course</a><sup class="footnote-reference"><a href="#6">4</a></sup></li>
+</ul>
+<h2 id="computer-vision">Computer Vision<a class="zola-anchor" href="#computer-vision" aria-label="Anchor link for: computer-vision" style="visibility: hidden;"></a>
+</h2>
+<p>I'm interested in doing a high-level overview of the concepts. I noticed that there are <a rel="nofollow noreferrer" href="https://cs.uwaterloo.ca/~yboykov/Courses/cs484/lectures.html">lecture notes</a> from <a rel="nofollow noreferrer" href="https://cs.uwaterloo.ca/current/courses/course_descriptions/cDescr/CS484">CS484: Introduction to Computer Vision</a> which I will probably try to skim through for a high-level understanding. Understanding signal processing and the frequency domain is a huge aid for jumping into this topic.</p>
+<h3 id="resources-3">Resources<a class="zola-anchor" href="#resources-3" aria-label="Anchor link for: resources-3" style="visibility: hidden;"></a>
+</h3>
+<ul>
+<li><a rel="nofollow noreferrer" href="https://www.goodreads.com/book/show/57231672-computer-vision">Computer Vision: Algorithms and Applications</a><sup class="footnote-reference"><a href="#4">5</a></sup></li>
+<li><a rel="nofollow noreferrer" href="https://www.goodreads.com/book/show/19353509-concise-computer-vision">Concise Computer Vision: An Introduction to Theory and Algorithms</a><sup class="footnote-reference"><a href="#5">6</a></sup></li>
+</ul>
+<h2 id="analysis">Analysis<a class="zola-anchor" href="#analysis" aria-label="Anchor link for: analysis" style="visibility: hidden;"></a>
+</h2>
+<p>I'd like to study some Analysis to add to my understanding of Calculus fundamentals. I think that it will help with my understanding of statistics/probability and for signal processing.</p>
+<h3 id="resources-4">Resources<a class="zola-anchor" href="#resources-4" aria-label="Anchor link for: resources-4" style="visibility: hidden;"></a>
+</h3>
+<ul>
+<li><a rel="nofollow noreferrer" href="https://www.goodreads.com/book/show/502785.Analysis_I">Analysis 1</a><sup class="footnote-reference"><a href="#8">7</a></sup></li>
+</ul>
+<h1 id="minor-interest">Minor Interest<a class="zola-anchor" href="#minor-interest" aria-label="Anchor link for: minor-interest" style="visibility: hidden;"></a>
+</h1>
+<h2 id="networks">Networks<a class="zola-anchor" href="#networks" aria-label="Anchor link for: networks" style="visibility: hidden;"></a>
+</h2>
+<p>I want to review the low-level protocol concepts to have a more solid understanding of the fundamentals. I took a course on this: <a rel="nofollow noreferrer" href="https://cs.uwaterloo.ca/current/courses/course_descriptions/cDescr/CS456">CS456 Computer Networks</a> which did go over things like <a rel="nofollow noreferrer" href="https://datatracker.ietf.org/doc/html/rfc9293">TCP</a> including the connection state machine.</p>
+<h3 id="resources-5">Resources<a class="zola-anchor" href="#resources-5" aria-label="Anchor link for: resources-5" style="visibility: hidden;"></a>
+</h3>
+<ul>
+<li><a rel="nofollow noreferrer" href="https://www.goodreads.com/book/show/9176515-tcp-ip-illustrated-volume-1">TCP/IP Illustrated, Volume 1: The Protocols</a><sup class="footnote-reference"><a href="#1">8</a></sup></li>
+</ul>
+<h2 id="llms">LLMs<a class="zola-anchor" href="#llms" aria-label="Anchor link for: llms" style="visibility: hidden;"></a>
+</h2>
+<p>Continue to play with locally hosted LLMs. Possibly look into more customized models or how to improve my workflow with LLMs.</p>
+<h1 id="books">Books<a class="zola-anchor" href="#books" aria-label="Anchor link for: books" style="visibility: hidden;"></a>
+</h1>
+<div class="footnote-definition" id="2"><sup class="footnote-definition-label">1</sup>
+<p><a rel="nofollow noreferrer" href="https://linear.axler.net/">Sheldon Axler, Linear Algebra Done Right, fourth edition</a></p>
+</div>
+<div class="footnote-definition" id="3"><sup class="footnote-definition-label">2</sup>
+<p>George Casella, Roger L. Berger; Statistical Inference Second Edition (978-0534243128)</p>
+</div>
+<div class="footnote-definition" id="7"><sup class="footnote-definition-label">3</sup>
+<p>Larry Wasserman, All of Statistics: A Concise Course in Statistical Inference (978-0387402727)</p>
+</div>
+<div class="footnote-definition" id="6"><sup class="footnote-definition-label">4</sup>
+<p>Victor M. Panaretos, Statistics for Mathematicians: A Rigorous First Course (978-3319283395)</p>
+</div>
+<div class="footnote-definition" id="4"><sup class="footnote-definition-label">5</sup>
+<p><a rel="nofollow noreferrer" href="https://szeliski.org/Book/">Richard Szeliski, Computer Vision: Algorithms and Applications, 2nd ed.</a></p>
+</div>
+<div class="footnote-definition" id="5"><sup class="footnote-definition-label">6</sup>
+<p><a rel="nofollow noreferrer" href="https://link.springer.com/book/10.1007/978-1-4471-6320-6">Reinhard Klette, Concise Computer Vision An Introduction to Theory and Algorithms (978-1447163190)</a></p>
+</div>
+<div class="footnote-definition" id="8"><sup class="footnote-definition-label">7</sup>
+<p>Terence Tao, Analysis 1 (978-8185931623)</p>
+</div>
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">8</sup>
+<p><a rel="nofollow noreferrer" href="https://en.wikipedia.org/wiki/TCP/IP_Illustrated">W. Richard Stevens, TCP/IP Illustrated, Volume 1: The Protocols (978-0201633467)</a></p>
+</div>
+
+        
+      </article>
+
+      
+      
+
+      
+      
+    </div>
+
+    <footer>
+  <div class="copyright">
+    <p>© 2025 Alexander Acker</p>
+
+  </div>
+  
+  <div class="credits">
+    powered by
+    <a href="https://www.getzola.org" target="_blank" rel='noreferrer noopener'>zola</a>
+    and
+    <a href="https://github.com/alexanderacker-com/serene/" target="_blank" rel='noreferrer noopener'>serene fork</a>
+  </div>
+  
+</footer>
+  </main>
+</div>
+
+  
+<script src="/js/lightense.min.js"></script>
+
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

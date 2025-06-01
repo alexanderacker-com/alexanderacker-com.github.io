@@ -1,0 +1,61 @@
+[[project]]
+name = "MMORPG Prototype"
+desc = "mmoproto"
+link = ""
+tags = ["rust", "wasm", "bevy", "async", "tokio"]
+img = ""
+links = []
+
+[[project]]
+name = "libzim ffi (zim-rs)"
+desc = "zim-rs"
+link = "https://crates.io/crates/zim-rs"
+tags = ["rust", "ffi"]
+img = "openzim-logo.svg"
+links = [
+    { name = "crates.io", url = "https://crates.io/crates/zim-rs" },
+    { name = "gitlab: zim-rs", url = "https://gitlab.com/alexanderacker/zim-rs" },
+    { name = "gitlab: zim-sys", url = "https://gitlab.com/alexanderacker/zim-sys" },
+]
+
+[[project]]
+name = "MPV Music Player (mpvm)"
+desc = "mpvm"
+link = "https://github.com/xenon/mpvm"
+tags = ["rust", "ffi", "mpv", "audio", "async", "tokio"]
+img = ""
+links = [{ name = "github", url = "https://github.com/xenon/mpvm" }]
+
+[[project]]
+name = "Game Boy Emulator"
+desc = "gb"
+link = "https://gitlab.com/alexanderacker/gb"
+tags = ["rust", "emulation"]
+img = "gb-original-2.png"
+render = "smooth"
+links = [
+    { name = "gitlab", url = "https://gitlab.com/alexanderacker/gb" },
+    { name = "github", url = "https://github.com/xenon/gb" },
+]
+
+[[project]]
+name = "Graphviz Web App"
+desc = "graphvizwebapp"
+link = "https://gitlab.com/alexanderacker/dot-wasm-webapp"
+tags = ["js", "rust", "wasm", "leptos", "graphviz"]
+img = ""
+links = [
+    { name = "gitlab", url = "https://gitlab.com/alexanderacker/dot-wasm-webapp" },
+    { name = "github", url = "https://github.com/xenon/dot-wasm-webapp" },
+]
+
+[[project]]
+name = "Keyboard Layout Generator"
+desc = "genkeyboard"
+link = "https://github.com/xenon/genkeyboard"
+tags = ["js", "rust", "vim", "emacs"]
+img = ""
+links = [
+    { name = "github", url = "https://github.com/xenon/genkeyboard" },
+    { name = "github: demo page", url = "https://github.com/xenon/genkeyboard-example-js" },
+]
